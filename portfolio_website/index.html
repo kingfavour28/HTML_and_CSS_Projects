@@ -12,7 +12,9 @@
 <!--Body-->
 
 <body class="Background">
-
+    <div class="light-box">
+        <button id="openFormButton" onclick="openForm()">CONTACT US</button>
+    </div>
     <!--Navbar-->
     <div class="Navbar">
         <a class="active" href="#Home">Home</a>
@@ -99,11 +101,11 @@
     <!--Contact section-->
     <div class="Row" id="Contact">
         <!--Contact image, left column-->
-        <div class="Column_2 Column_tall">
+        <!-- <div class="Column_2 Column_tall">
             <img src="images/contact.jpg" alt="Contact_Image">
-        </div>
+        </div> -->
         <!--Contact form, right column-->
-        <div class="Column_1 Column_tall">
+        <div class="Column_1 Column_tall contact-form display-none">
             <h1>Contact</h1>
             <!--This specifies where and how to send the form data; we are leaving it blank-->
             <form action="https://formspree.io/f/xeqyyjjv" method="POST">
@@ -127,6 +129,7 @@
         <br>
         </p>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
